@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/948b7e4d5c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Generator</title>
+</head>
+<body>
+    <section>
+        <form action="#" id="form-values">
+            <div class="container">
+                <h1>Generátor tabuľky hodnôt funkcie f() = X*Y</h1>
+                <div class="values">
+                    <div class="input-for-X">
+                        <label for="x" class="values">Zadaj hodnotu X</label>
+                        <input type="number" min="1" max="9" id="x" required placeholder="1">
+                        <label for="x" id="x-error">Zadaj číslo v rozsahu 1-9!</label>
+                    </div>
+                    <div class="input-for-Y">
+                        <label for="y" class="values">Zadaj hodnotu Y</label>
+                        <input type="number" min="1" max="9" id="y" required placeholder="1">
+                        <label for="y" id="y-error">Zadaj číslo v rozsahu 1-9!</label>
+                    </div>
+                </div>
+                <div class="tlacidlo">
+                    <button type="button" class="button" id="calculate">
+                        <span class="button_text">Vypočítaj</span>
+                        <span class="button_icon"><i class="fas fa-calculator"></i></span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <div id="modal">
+        <div class="window">
+            <h2>Výsledok</h2>  
+            <div id="content"></div>
+            <div class="tlacidlo">
+                <button type="button" class="button" id="closeButton">
+                    <span class="button_text">Zatvor</span>
+                    <span class="button_icon"><i class="fas fa-times-circle"></i></span>
+                </button>
+            </div>         
+        </div>
+    </div>
+    <script src="main.js" defer></script>
+</body>
+</html>
